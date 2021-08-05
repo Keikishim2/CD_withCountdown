@@ -73,10 +73,10 @@
                             <p class="mobile_house">Next Open House</p>
                             <p class="mobile_timezone">FRIDAY, OCTOBER 18, 2020 @ 03:00 PST</p>
                             <ul class="mobile_time">
-                                <li><span class="int0">02</span> Days</li>
-                                <li><span class="int1">12</span> Hours</li>
-                                <li><span class="int2">42</span> Mins</li>
-                                <li><span class="int3">04</span> Secs</li>
+                                <li><span id="int0">1</span> Days</li>
+                                <li><span id="int1"></span> Hours</li>
+                                <li><span id="int2"></span> Mins</li>
+                                <li><span id="int3"></span> Secs</li>
                             </ul>
                         <!-- end of tablet_section & mobile_section -->
                         </div>

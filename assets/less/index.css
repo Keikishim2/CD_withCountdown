@@ -615,10 +615,10 @@ h6 {
   .mobile_time li {
     margin: 10px;
   }
-  .int0,
-  .int1,
-  .int2,
-  .int3 {
+  #int0,
+  #int1,
+  #int2,
+  #int3 {
     color: #E1554C;
   }
   .container {

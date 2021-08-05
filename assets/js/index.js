@@ -1,10 +1,11 @@
-$("document").ready(function(){
+
     /* DOCU: Validating form
     TRIGGERED BY: submitForm
     AUTHOR: Kei Kishimoto*/
     $("body")
-    .on("submit", "#form", submitForm);
-    });
+        .on("submit", "#form", submitForm)
+        .countdown("2021/10/18", int_count);
+
     function submitForm(){
         $(".contact_inputs").each(function(){
             let input = $(this); 
@@ -19,36 +20,32 @@ $("document").ready(function(){
         }
     /* DOCU: Clock Countdown
     AUTHOR: Kei Kishimoto*/
-    $(".list_time").countdown("2021/10/18", function(event){
-        $(this).text(
+    function int_count(event){
+        $(".list_time").text(
             event.strftime('%D %H:%M:%S')
         );
-    });
-    $(".num0").countdown("2021/10/18", function(event){
-        $(this).text(
+        $("#int0").text(
             event.strftime('%D')
         );
-        $('.num1').text(
+        $("#int1").text(
             event.strftime('%H')
         );
-        $('.num2').text(
+        $("#int2").text(
             event.strftime('%M')
         );
-        $('.num3').text(
+        $("#int3").text(
             event.strftime('%S')
         );
-    });
-    $(".int0").countdown("2021/10/18", function(event){
-        $(this).text(
+        $(".num0").text(
             event.strftime('%D')
         );
-        $('.int1').text(
+        $(".num1").text(
             event.strftime('%H')
         );
-        $('.int2').text(
+        $(".num2").text(
             event.strftime('%M')
         );
-        $('.int3').text(
+        $(".num3").text(
             event.strftime('%S')
         );
-    });
+    };
